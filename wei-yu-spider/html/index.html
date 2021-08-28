@@ -10,6 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: scroll;
       }
       .content {
         width: 690px;
@@ -17,13 +18,14 @@
         background: #ffffff;
         border-radius: 10px;
         box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
-        padding: 20px 70px 17px 70px;
+        padding: 20px 40px 17px 40px;
         font-size: 23px;
         font-family: Source Han Sans CN, Source Han Sans CN-Regular;
         font-weight: 400;
         text-align: JUSTIFIED;
         color: #a5461e;
         line-height: 25px;
+        box-sizing: border-box;
       }
       .content .content-text > p {
         margin-bottom: 30px;
@@ -54,6 +56,7 @@
       .weiyu {
         width: 690px;
         margin-top: 30px;
+        margin-bottom: 30px;
       }
       .weiyu > p {
         opacity: 0.7;
@@ -63,38 +66,72 @@
         text-align: CENTER;
         color: #a5461e;
       }
+      .image-title {
+        margin-top: 40px;
+        margin-bottom: 14px;
+      }
+      .title-container {
+        position: relative;
+        width: 690px;
+        margin-bottom: 22px;
+      }
+      .title {
+        opacity: 1;
+        font-size: 20px;
+        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+        font-weight: 400;
+        text-align: CENTER;
+        color: #c43f0c;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: white;
+        padding: 0 20px;
+        margin-top: 4px;
+      }
+      .divider {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #c43f0c;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- <img class="template" src="https://github.com/wl05/code-demo/blob/master/wei-yu-spider/html/template.png?raw=true" /> -->
+      <img class="image-title" class="template" src="https://github.com/wl05/code-demo/blob/master/wei-yu-spider/html/title.png?raw=true" />
+      <div class="title-container">
+        <p class="title">2021.08.28 | 周日 | 农历七月廿一</p>
+        <span class="divider"></span>
+      </div>
+
+      <img class="template" src="https://github.com/wl05/code-demo/blob/master/wei-yu-spider/html/banner.png?raw=true" />
       <div class="content">
         <div class="content-header">
           <span class="ball"></span>
           <span class="ball"></span>
         </div>
         <section class="content-text">
-          <p>8月28日微语简报，星期六，农历七月廿一，周末愉快！</p>
-          <p>1、中央网信办深入整治饭圈乱象十项措施：取消明星艺人榜，严禁呈现互撕信息。</p>
-          <p>2、教育部：接种新冠疫苗不能跟中小学生入学挂上钩。</p>
-          <p>3、央视评郑爽偷逃税被罚2.99亿：依法纳税，是基本的法治素养。</p>
-          <p>4、喀布尔机场两起爆炸致已造成103人死亡。</p>
-          <p>5、市场监管总局：医美广告制造容貌焦虑将被重点打击。</p>
-          <p>6、电视剧倩女幽魂出品方虚增收入4.6亿元，证监会：拟做行政处罚和市场禁入措施。</p>
-          <p>7、苹果商店将支持其他支付方式，不再收取佣金。</p>
-          <p>8、强降雨天气持续，重庆3条河流现超警戒水位洪水。</p>
-          <p>9、小区物业不得强制业主刷脸进出，有明确告知义务。</p>
-          <p>10、央视曝光注销支付宝学生账户骗局，此类案今年损失13.3亿。</p>
-          <p>11、我国网民规模达10.11亿，接近欧美人口之和，我国6至19岁网民规模达1.58亿。</p>
-          <p>12、2020年我国潮玩市场达近300亿，2023年有望达600亿。</p>
+          <p>0.中央网信办深入整治饭圈乱象十项措施：取消明星艺人榜，严禁呈现互撕信息。</p>
+          <p>1.教育部：接种新冠疫苗不能跟中小学生入学挂上钩。</p>
+          <p>2.央视评郑爽偷逃税被罚2.99亿：依法纳税，是基本的法治素养。</p>
+          <p>3.喀布尔机场两起爆炸致已造成103人死亡。</p>
+          <p>4.市场监管总局：医美广告制造容貌焦虑将被重点打击。</p>
+          <p>5.电视剧倩女幽魂出品方虚增收入4.6亿元，证监会：拟做行政处罚和市场禁入措施。</p>
+          <p>6.苹果商店将支持其他支付方式，不再收取佣金。</p>
+          <p>7.强降雨天气持续，重庆3条河流现超警戒水位洪水。</p>
+          <p>8.小区物业不得强制业主刷脸进出，有明确告知义务。</p>
+          <p>9.央视曝光注销支付宝学生账户骗局，此类案今年损失13.3亿。</p>
+          <p>10.我国网民规模达10.11亿，接近欧美人口之和，我国6至19岁网民规模达1.58亿。</p>
+          <p>11.2020年我国潮玩市场达近300亿，2023年有望达600亿。</p>
           <p class="every-day-sign">每/日/一/签</p>
         </section>
       </div>
       <div class="weiyu">
         <p>【微语】</p>
-        <p>人生百年，说短不短，说长不长。</p>
-        <p>合则来，不合则去，不必太用力，不必彼此为难。</p>
-        <p>你我相遇、相知、相伴，是共性和吸引，而不是伪装和奉承。</p>
+        <p>人生百年，说短不短，说长不长</p>
+        <p>合则来，不合则去，不必太用力，不必彼此为难</p>
+        <p>你我相遇、相知、相伴，是共性和吸引，而不是伪装和奉承</p>
       </div>
     </div>
   </body>
