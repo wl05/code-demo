@@ -1,0 +1,21 @@
+{
+  "name": "js-compiler",
+  "version": "1.0.0",
+  "description": "js compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "node index.js",
+    "postbuild": "npm run test"
+  },
+  "author": "ant",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.6",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^27.0.6",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
