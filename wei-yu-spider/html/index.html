@@ -7,17 +7,95 @@
         margin: 0;
       }
       .container {
-        /* width: 750px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      .template {
-        /* width: 750px; */
+      .content {
+        width: 690px;
+        opacity: 1;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+        padding: 20px 70px 17px 70px;
+        font-size: 23px;
+        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+        font-weight: 400;
+        text-align: JUSTIFIED;
+        color: #a5461e;
+        line-height: 25px;
+      }
+      .content .content-text > p {
+        margin-bottom: 30px;
+      }
+      .every-day-sign {
+        opacity: 0.7;
+        font-size: 20px;
+        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+        font-weight: 400;
+        text-align: CENTER;
+        color: #a13f19;
+        letter-spacing: 2px;
+      }
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .content-header .ball {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background: #a5461e;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .weiyu {
+        width: 690px;
+        margin-top: 30px;
+      }
+      .weiyu > p {
+        opacity: 0.7;
+        font-size: 22px;
+        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+        font-weight: 400;
+        text-align: CENTER;
+        color: #a5461e;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img class="template" src="./template.png" />
-      <p>8月25日微语简报，星期三，农历七月十八，工作愉快，生活喜乐！</p><p>1、北京住房租赁条例公开征求意见，租金上涨过快可调控。</p><p>2、多地报告本地群众被跨区拉到外地接种疫苗，将严厉打击。</p><p>3、中国残奥代表团开幕式第98个出场。</p><p>4、多款APP下线拍照搜题功能。</p><p>5、抚顺市教育局：义务教育阶段学科类校外培训机构关停率达100%，共关停204所。</p><p>6、福岛核污水排放方式基本敲定：用海底隧道引至海中排出。</p><p>7、联合国机构警告阿富汗9月出现粮食短缺。</p><p>8、美国科学家发现对抗新冠超级抗体：可对抗所有新冠变异毒株。</p><p>9、冲击BBC工作室后，英国反疫苗示威者再闯谷歌办公楼。</p><p>10、阿塔警告美国推迟撤军将越红线，拜登政府面临巨大压力。</p><p>11、乌克兰从阿富汗撤侨飞机遭不明人员劫持。</p><p>12、美实验室曾通报1500多起病原体相关事故。</p><p>【微语】死要面子不如活得痛快，你以为重要的东西，其实都是束缚你的枷锁。人最重要的，只有两样：自信和洒脱。</p>
+      <!-- <img class="template" src="https://github.com/wl05/code-demo/blob/master/wei-yu-spider/html/template.png?raw=true" /> -->
+      <div class="content">
+        <div class="content-header">
+          <span class="ball"></span>
+          <span class="ball"></span>
+        </div>
+        <section class="content-text">
+          <p>8月28日微语简报，星期六，农历七月廿一，周末愉快！</p>
+          <p>1、中央网信办深入整治饭圈乱象十项措施：取消明星艺人榜，严禁呈现互撕信息。</p>
+          <p>2、教育部：接种新冠疫苗不能跟中小学生入学挂上钩。</p>
+          <p>3、央视评郑爽偷逃税被罚2.99亿：依法纳税，是基本的法治素养。</p>
+          <p>4、喀布尔机场两起爆炸致已造成103人死亡。</p>
+          <p>5、市场监管总局：医美广告制造容貌焦虑将被重点打击。</p>
+          <p>6、电视剧倩女幽魂出品方虚增收入4.6亿元，证监会：拟做行政处罚和市场禁入措施。</p>
+          <p>7、苹果商店将支持其他支付方式，不再收取佣金。</p>
+          <p>8、强降雨天气持续，重庆3条河流现超警戒水位洪水。</p>
+          <p>9、小区物业不得强制业主刷脸进出，有明确告知义务。</p>
+          <p>10、央视曝光注销支付宝学生账户骗局，此类案今年损失13.3亿。</p>
+          <p>11、我国网民规模达10.11亿，接近欧美人口之和，我国6至19岁网民规模达1.58亿。</p>
+          <p>12、2020年我国潮玩市场达近300亿，2023年有望达600亿。</p>
+          <p class="every-day-sign">每/日/一/签</p>
+        </section>
+      </div>
+      <div class="weiyu">
+        <p>【微语】</p>
+        <p>人生百年，说短不短，说长不长。</p>
+        <p>合则来，不合则去，不必太用力，不必彼此为难。</p>
+        <p>你我相遇、相知、相伴，是共性和吸引，而不是伪装和奉承。</p>
+      </div>
     </div>
   </body>
 </html>

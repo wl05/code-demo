@@ -17,12 +17,18 @@ const htmlStr = frameData => `<!DOCTYPE html>
       .template {
         /* width: 750px; */
       }
+      .content {
+        position: absolute;
+        top: 0;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <img class="template" src="../html/template.png" />
+      <img class="template" src="https://github.com/wl05/code-demo/blob/master/wei-yu-spider/html/template.png?raw=true" />
+      <div class="content">
       ${frameData}
+      </div>
     </div>
   </body>
 </html>
@@ -50,7 +56,6 @@ const requestHistoryArticleList = async () => {
       url,
       method: 'GET'
     })
-    console.log(res)
     return res.data.app_msg_list
   } catch (error) {
     console.log('===error===', error)
@@ -68,15 +73,13 @@ const requestArticleDetail = async url => {
       return /日微语简报/.test(str) || /^[0-9]+、/.test(str) || /【微语】/.test(str)
     })
 
-    console.log(options)
-
     const html = htmlStr(
       options.reduce((pre, cur) => {
         return pre + `<p>${cur}</p>`
       }, '')
     )
 
-    // fs.writeFileSync('./html/index.html', html)
+    fs.writeFileSync('./html/index.html', html)
     await page.setContent(html)
     await page.screenshot({ path: 'example.png' })
     await page.close()
@@ -88,7 +91,6 @@ const requestArticleDetail = async url => {
 
 const stater = async () => {
   const historyArticleList = await requestHistoryArticleList()
-  console.log('===historyArticleList===', historyArticleList)
   const newestArticle = historyArticleList.find(arr => {
     return /日微语简报/.test(arr.title)
   })
